@@ -7,8 +7,10 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<PaginaPadrao />}>
-          <Route index element={<Home/>} />
+          <Route index element={<Home />} />
         </Route>
+
+        <Route path='*' element={<h1>Algo de Errado não esta certo...</h1>}/>
       </Routes>
     </BrowserRouter>
   )
